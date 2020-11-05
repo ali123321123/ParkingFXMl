@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.FXMLDocumentController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="404.0" prefWidth="549.0">
+         <children>
+            <TextField fx:id="txtBilnummer" layoutX="175.0" layoutY="142.0" />
+            <Button layoutX="76.0" layoutY="226.0" mnemonicParsing="false" onAction="#regKorttid" text="Korttidsparkering" />
+            <Button layoutX="197.0" layoutY="226.0" mnemonicParsing="false" onAction="#regLangtid" text="Langtidsparkering" />
+            <Button layoutX="340.0" layoutY="226.0" mnemonicParsing="false" onAction="#kjørUt" text="kjør ut" />
+            <Label layoutX="139.0" layoutY="14.0" prefHeight="55.0" prefWidth="193.0" text="Parkering">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="107.0" layoutY="146.0" text="bilnummer" />
+            <Label fx:id="lblAvgift" layoutX="130.0" layoutY="291.0" prefHeight="87.0" prefWidth="238.0" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
